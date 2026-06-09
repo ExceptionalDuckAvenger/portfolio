@@ -1,0 +1,77 @@
+:root {
+  --grid-gap: 20px;
+}
+main {
+  padding: var(--grid-gap);
+}
+
+header {
+  padding: 20px;
+}
+.col1-1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--grid-gap);
+}
+
+.auto-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--grid-gap);
+}
+
+.col1-1-1 {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--grid-gap);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/* Card styles  */
+.card {
+  background-color: #735aa8;
+  padding: 10px;
+  border-radius: 8px;
+}
+.card p {
+  padding: 10px;
+  color: var(--text-color);
+}
+
+.portfolio {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--grid-gap);
+  font-size: 3rem;
+}
+
+/* Base — mobile first */
+.container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Tablet */
+@media (min-width: 400px) {
+  .container {
+    flex-direction: row;
+    padding: 24px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

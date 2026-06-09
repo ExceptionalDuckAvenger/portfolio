@@ -1,0 +1,94 @@
+:root {
+  --primary-color: #f1800c;
+  --secondary-color: #54b844;
+  --accent-color: #735aa8;
+  --background-color: #cbabf9;
+  --text-color: #1e1e1e;
+}
+
+body {
+  font-family: "Gideon Roman", serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+h1 {
+  color: var(--text-color);
+  font-size: 2rem;
+}
+
+h2 {
+  color: var(--text-color);
+  font-size: 1.6rem;
+}
+
+h3 {
+  color: var(--text-color);
+}
+
+p {
+  color: var(--text-color);
+}
+
+body {
+  margin: 0;
+
+  font-family: "Gideon Roman", serif;
+  font-size: 1.4rem;
+}
+main {
+  max-width: 100%;
+  margin: 20px auto 20px;
+  padding: 20px;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+header {
+  background-color: var(--accent-color);
+}
+nav {
+  background-color: var(--accent-color);
+  color: #cbabf9;
+}
+
+nav ul li {
+  display: inline;
+}
+nav ul li input {
+  display: inline;
+}
+nav ul {
+  /* padding-inline-start: 0;*/
+  display: flex;
+
+  justify-content: center;
+  gap: 8rem;
+}
+
+/* image modal */
+
+#imageModal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 9999;
+  justify-content: center;
+  align-items: center;
+}
+#imageModal img {
+  max-width: 80vw;
+  max-height: 80vh;
+  object-fit: contain;
+  cursor: zoom-out;
+}
+body.modal-open {
+  overflow: hidden;
+}
+
+img {
+  cursor: zoom-in;
+}
